@@ -21,7 +21,7 @@ app.use(cookieParser())
 app.set('view engine', 'ejs')
 app.use(bodyParser.urlencoded({extended:true}))
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000', "https://question-deck.onrender.com"],
     methods: ['GET', 'POST', 'DELETE', 'PUT'],
     credentials: true
   }));
